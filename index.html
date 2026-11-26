@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova AI Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+        <aside class="sidebar">
+            <div class="brand">✦ nova.ai</div>
+            <button class="new-chat" id="newChat">＋ New chat</button>
+
+            <p class="side-label">YOUR SPACE</p>
+            <div class="side-item active">◉ Chat assistant</div>
+            <div class="side-item">◇ Explore</div>
+
+            <div class="side-bottom">
+                <div class="avatar">S</div>
+                <div>
+                    <strong>Guest user</strong>
+                    <small>Starter workspace</small>
+                </div>
+            </div>
+        </aside>
+
+        <section class="chat-area">
+            <header class="topbar">
+                <div>
+                    <span class="status-dot"></span>
+                    <strong>Nova Assistant</strong>
+                    <span class="model-tag">DEMO</span>
+                </div>
+                <button id="clearChat">Clear chat</button>
+            </header>
+
+            <div class="messages" id="messages">
+                <div class="welcome" id="welcome">
+                    <div class="sparkle">✦</div>
+                    <p>YOUR CREATIVE SIDEKICK</p>
+                    <h1>What can I help<br>
+                    <span>you with today?</span></h1>
+                    <p>Ask a question, brainstorm an idea, or just say hello.</p>
+
+                    <div class="suggestions">
+                        <button class="suggestion">💡 Give me a creative idea</button>
+                        <button class="suggestion">📚 Explain a topic simply</button>
+                        <button class="suggestion">✍️ Help me write something</button>
+                    </div>
+                </div>
+            </div>
+
+            <form class="composer" id="chatForm">
+                <textarea id="userInput"
+                placeholder="Message Nova..." rows="1"></textarea>
+
+                <button class="send-btn" type="submit">↑</button>
+
+                <div class="composer-hint">
+                    Nova is a demo chatbot.
+                </div>
+            </form>
+
+            <footer>
+                Built with HTML, CSS & JavaScript
+            </footer>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
